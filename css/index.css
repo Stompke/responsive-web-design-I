@@ -1,3 +1,503 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/*** HEADER & NAV - START ***/
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	background: teal;
+	align-items: center;
+	padding: 20px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+
+}
+
+.mobileNav {
+	visibility: hidden;
+	width: 15%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: yellow;
+}
+
+.logoBox {
+	padding: 0px 2%;
+
+
+}
+
+
+/* HEADER & NAV - END */
+
+
+
+/*** WHOLE PAGE EDITS - START ***/
+
+.pageContainer {
+	margin: 0px 8%;
+}
+
+h1 {
+	font-size: 7vw;
+}
+
+/* WHOLE PAGE EDITS - END */
+
+
+
+/***                         HOME PAGE CSS EDITS - START                         ***/
+
+/*** MAIN TOP SECTION - START ***/
+
+.mainSection {
+    display: flex;
+    flex-flow: row wrap;
+	margin: 60px 0px;
+}
+
+.mainSection .leftHalf {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.mainSection .rightHalf  {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.rightHalf img {
+	width: 100%;
+	max-width: 415px;
+	max-height: 415px;
+}
+
+
+.mainSection h1 {
+	text-align: center;
+
+}
+.mainSection .button {
+	display: block;
+	text-decoration: none;
+	border: 2px solid black;
+	padding: 10px 20px;
+	color: black;
+	margin-top: 15px;
+	border-radius: 3px;
+}
+
+.mainSection .button:hover {
+	color: white;
+	background: teal;
+	box-shadow: 2px 2px #115050;;
+
+}
+
+.halfWidth {
+	width: 50%;
+}
+
+
+/* MAIN TOP SECTION - END */
+
+/*** SECTION FEATURES ABOUT - START ***/
+
+.featuresAbout {
+	display: flex;
+	border-top: 2px solid black;
+	padding: 30px 0px;
+	justify-content: space-between;
+}
+.featuresAbout .halfWidth {
+	width: 47%;
+}
+
+/* SECTION FEATURES ABOUT - END */
+
+/*** MIDDLE IMAGE IN CONTENT - START ***/
+
+.middle-img {
+	width: 100%;
+}
+
+/* MIDDLE IMAGE IN CONTENT - END */
+
+/*** Services Product Vision Section - START ***/
+
+.servicesProductVision {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0px;
+	border-bottom: 2px solid black;
+}
+
+.servicesProductVision .thirdWidth {
+	width: 31%;
+}
+
+
+/* Services Product Vision Section - END */
+
+/*** CONTACT SECTION - START ***/
+
+.contactSection {
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 30px 0px;
+}
+address p {
+	margin-bottom: 15px;
+	
+}
+address a{
+	text-decoration: none;
+}
+
+/* CONTACT SECTION - END */
+
+/*** FOOTER SECTION - START ***/
+footer {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+/* FOOTER SECTION - END */
+
+
+
+/*** RESPSONSIVE FOR MAX-WIDTH 500px - START ***/
+@media (max-width: 500px) {
+    h1 {
+        font-size: 11vw;
+    }
+    nav {
+        color: red;
+        flex-direction: column;
+        border-top: 2px solid black;
+    }
+    nav a {
+        border-bottom: 1px solid black;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+    header {
+        padding: 20px 0px 0px 0px;
+    }
+    .featuresAbout  {
+        flex-flow: row wrap;
+    }
+    .featuresAbout .halfWidth {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .servicesProductVision {
+        flex-direction: column;
+    }
+
+    .servicesProductVision .thirdWidth {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
+
+/**  HAMBURGER MENU STUFF - START  **/
+/* @media only screen and (max-width: 500px) {
+    .singleGridBox {
+        width: 100%;
+
+    }
+    .someFacts .leftHalf {
+        width: 100%;
+    }
+    .someFacts .rightHalf {
+        width: 100%;
+        justify-content: center;
+    }
+    nav {
+        visibility: hidden;
+    }
+    .mobileNav {
+        visibility: visible;
+        line-height: .1;
+        font-size: 50px;
+    }
+    .hamburger {
+        margin-top: -35px;
+    }
+    .hamburger:hover {
+        color: white;
+        cursor: pointer;
+    }
+} */
+/*  HAMBURGER MENU STUFF - END  */
+
+/* RESPSONSIVE FOR MAX-WIDTH 500px - END */
+
+
+/*** RESPONSIVE FOR MAX-WIDTH 800px - START ***/
+
+@media (max-width: 800px){
+    header{
+        flex-direction: column-reverse ;
+        justify-content: center;
+    }
+    .logoBox{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* .leftHalf .halfWidth {
+        width: 100%;
+    } */
+    .halfWidth.rightHalf {
+        display: none;
+    }
+    .halfWidth {
+        width: 100%;
+    }
+}
+
+/* RESPONSIVE FOR MAX-WIDTH 800px - END */
+
+  
+/*                            HOME PAGE CSS EDITS - END                           */
+
+
+
+
+
+
+
+
+/***               EDITS FOR SERVICES PAGE - START                     ***/
+
+
+
+/*** HEADER IMAGE - START ***/
+
+    .services-header-img {
+        width: 100%;
+    }
+
+/* HEADER IMAGE - END */
+
+/*** SERVICES SECTION - START ***/
+
+    .services {
+        padding: 40px 0px;
+        border-bottom: 2px solid black;
+    }
+
+    .services h1 {
+        font-size: 32px;
+    }
+
+/* SERVICES SECTION - END */
+
+/*** LEARN MORE GRID - START ***/
+
+    .learnMoreGrid {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+
+    .learnMoreButton {
+        background: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 10px 40px;
+        display: inline-block;
+        margin: 20px 0px;
+    }
+
+    .learnMoreButton:hover {
+        color: white;
+        background: teal;
+        border: 1px solid white;
+    }
+
+    .singleGridBox {
+        border: 1px solid black;
+        background: #ccc;
+        padding: 20px;
+        width: 48%;
+        margin-bottom: 4%;
+    }
+/* LEARN MORE GRID - END */
+
+/*** SOME FACTS SECTION - START ***/
+
+    .someFacts {
+        display: flex;
+        flex-flow: row wrap;
+        border-top: 2px solid black;
+        padding: 40px 0px;
+        justify-content: space-between;
+    }
+    .someFacts p {
+        margin-bottom: 20px;
+        
+    }
+    .someFacts li {
+        list-style-type: square;
+        margin-bottom: 15px;
+    }
+    ul {
+        margin-left: 20px;
+    }	
+
+    .someFacts .leftHalf {
+        width: 48%;
+    }
+    .someFacts .rightHalf {
+        width: 48%;	
+        display: flex;
+        justify-content: flex-end;
+    }
+    .someFacts img {
+        width: 100%;
+        height: auto;
+    }
+
+/* SOME FACTS SECTION - END */
+
+/*** FOOTER SECTION - START ***/
+
+    footer {
+        margin: 40px 0px;
+    }
+
+/* FOOTER SECTION - END */
+
+
+/*** @MEDIA RESPONSIVE EDITS FOR SERVICES PAGE - START ***/
+
+@media (max-width: 800px){
+    .singleGridBox {
+        width: 100%;
+    }
+    .someFacts .leftHalf {
+        width: 100%;
+    }
+    .someFacts .rightHalf {
+        width: 100%;
+        justify-content: center;
+    }
+    .someFacts {
+        flex-flow: row-reverse wrap;
+    }
+}
+
+/* @MEDIA RESPONSIVE EDITS FOR SERVICES PAGE - END */
+
+
+
+
+
+/*               EDITS FOR SERVICES PAGE - END                     */
+
+
+
 
 
