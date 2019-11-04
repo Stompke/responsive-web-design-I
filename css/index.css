@@ -109,6 +109,8 @@ nav a:hover {
 
 /* HEADER & NAV - END */
 
+
+
 /*** WHOLE PAGE EDITS - START ***/
 
 .pageContainer {
@@ -120,6 +122,10 @@ h1 {
 }
 
 /* WHOLE PAGE EDITS - END */
+
+
+
+/***                         HOME PAGE CSS EDITS - START                         ***/
 
 /*** MAIN TOP SECTION - START ***/
 
@@ -243,107 +249,247 @@ footer {
 
 /* FOOTER SECTION - END */
 
+
+
+/*** RESPSONSIVE FOR MAX-WIDTH 500px - START ***/
+@media (max-width: 500px) {
+    h1 {
+        font-size: 11vw;
+    }
+    nav {
+        color: red;
+        flex-direction: column;
+        border-top: 2px solid black;
+    }
+    nav a {
+        border-bottom: 1px solid black;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+    header {
+        padding: 20px 0px 0px 0px;
+    }
+    .featuresAbout  {
+        flex-flow: row wrap;
+    }
+    .featuresAbout .halfWidth {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .servicesProductVision {
+        flex-direction: column;
+    }
+
+    .servicesProductVision .thirdWidth {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
+
+/**  HAMBURGER MENU STUFF - START  **/
+/* @media only screen and (max-width: 500px) {
+    .singleGridBox {
+        width: 100%;
+
+    }
+    .someFacts .leftHalf {
+        width: 100%;
+    }
+    .someFacts .rightHalf {
+        width: 100%;
+        justify-content: center;
+    }
+    nav {
+        visibility: hidden;
+    }
+    .mobileNav {
+        visibility: visible;
+        line-height: .1;
+        font-size: 50px;
+    }
+    .hamburger {
+        margin-top: -35px;
+    }
+    .hamburger:hover {
+        color: white;
+        cursor: pointer;
+    }
+} */
+/*  HAMBURGER MENU STUFF - END  */
+
+/* RESPSONSIVE FOR MAX-WIDTH 500px - END */
+
+
+/*** RESPONSIVE FOR MAX-WIDTH 800px - START ***/
+
+@media (max-width: 800px){
+    header{
+        flex-direction: column-reverse ;
+        justify-content: center;
+    }
+    .logoBox{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* .leftHalf .halfWidth {
+        width: 100%;
+    } */
+    .halfWidth.rightHalf {
+        display: none;
+    }
+    .halfWidth {
+        width: 100%;
+    }
+}
+
+/* RESPONSIVE FOR MAX-WIDTH 800px - END */
+
+  
+/*                            HOME PAGE CSS EDITS - END                           */
+
+
+
+
+
+
+
+
 /***               EDITS FOR SERVICES PAGE - START                     ***/
+
+
 
 /*** HEADER IMAGE - START ***/
 
-.services-header-img {
-	width: 100%;
-}
+    .services-header-img {
+        width: 100%;
+    }
 
 /* HEADER IMAGE - END */
 
 /*** SERVICES SECTION - START ***/
 
-.services {
-	padding: 40px 0px;
-	border-bottom: 2px solid black;
-}
+    .services {
+        padding: 40px 0px;
+        border-bottom: 2px solid black;
+    }
 
-.services h1 {
-	font-size: 32px;
-}
+    .services h1 {
+        font-size: 32px;
+    }
 
 /* SERVICES SECTION - END */
 
 /*** LEARN MORE GRID - START ***/
 
-.learnMoreGrid {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	padding-top: 40px;
-}
+    .learnMoreGrid {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
 
-.learnMoreButton {
-	background: white;
-	color: black;
-	border: 1px solid black;
-	border-radius: 5px;
-	text-decoration: none;
-	padding: 10px 40px;
-	display: inline-block;
-	margin: 20px 0px;
-}
+    .learnMoreButton {
+        background: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 10px 40px;
+        display: inline-block;
+        margin: 20px 0px;
+    }
 
-.learnMoreButton:hover {
-	color: white;
-	background: teal;
-	border: 1px solid white;
-}
+    .learnMoreButton:hover {
+        color: white;
+        background: teal;
+        border: 1px solid white;
+    }
 
-.singleGridBox {
-	border: 1px solid black;
-	background: #ccc;
-	padding: 20px;
-	width: 48%;
-	margin-bottom: 4%;
-}
+    .singleGridBox {
+        border: 1px solid black;
+        background: #ccc;
+        padding: 20px;
+        width: 48%;
+        margin-bottom: 4%;
+    }
 /* LEARN MORE GRID - END */
 
 /*** SOME FACTS SECTION - START ***/
 
-.someFacts {
-	display: flex;
-	flex-flow: row wrap;
-	border-top: 2px solid black;
-	padding: 40px 0px;
-	justify-content: space-between;
-}
-.someFacts p {
-	margin-bottom: 20px;
-	
-}
-.someFacts li {
-	list-style-type: square;
-	margin-bottom: 15px;
-}
-ul {
-	margin-left: 20px;
-}	
+    .someFacts {
+        display: flex;
+        flex-flow: row wrap;
+        border-top: 2px solid black;
+        padding: 40px 0px;
+        justify-content: space-between;
+    }
+    .someFacts p {
+        margin-bottom: 20px;
+        
+    }
+    .someFacts li {
+        list-style-type: square;
+        margin-bottom: 15px;
+    }
+    ul {
+        margin-left: 20px;
+    }	
 
-.someFacts .leftHalf {
-	width: 48%;
-}
-.someFacts .rightHalf {
-	width: 48%;	
-	display: flex;
-	justify-content: flex-end;
-}
-.someFacts img {
-	width: 100%;
-	height: auto;
-}
+    .someFacts .leftHalf {
+        width: 48%;
+    }
+    .someFacts .rightHalf {
+        width: 48%;	
+        display: flex;
+        justify-content: flex-end;
+    }
+    .someFacts img {
+        width: 100%;
+        height: auto;
+    }
 
 /* SOME FACTS SECTION - END */
 
 /*** FOOTER SECTION - START ***/
 
-footer {
-	margin: 40px 0px;
-}
+    footer {
+        margin: 40px 0px;
+    }
 
 /* FOOTER SECTION - END */
+
+
+/*** @MEDIA RESPONSIVE EDITS FOR SERVICES PAGE - START ***/
+
+@media (max-width: 800px){
+    .singleGridBox {
+        width: 100%;
+    }
+    .someFacts .leftHalf {
+        width: 100%;
+    }
+    .someFacts .rightHalf {
+        width: 100%;
+        justify-content: center;
+    }
+    .someFacts {
+        flex-flow: row-reverse wrap;
+    }
+}
+
+/* @MEDIA RESPONSIVE EDITS FOR SERVICES PAGE - END */
 
 
 
@@ -352,107 +498,6 @@ footer {
 /*               EDITS FOR SERVICES PAGE - END                     */
 
 
-/*** RESPSONSIVE FOR MAX-WIDTH 500px - START ***/
-    @media (max-width: 500px) {
-        h1 {
-            font-size: 11vw;
-        }
-        nav {
-            color: red;
-            flex-direction: column;
-            border-top: 2px solid black;
-        }
-        nav a {
-            border-bottom: 1px solid black;
-            padding: 15px;
-            width: 100%;
-            text-align: center;
-        }
-        header {
-            padding: 20px 0px 0px 0px;
-        }
-        .featuresAbout  {
-            flex-flow: row wrap;
-        }
-        .featuresAbout .halfWidth {
-            width: 100%;
-            padding-bottom: 20px;
-        }
-
-        .servicesProductVision {
-            flex-direction: column;
-        }
-
-        .servicesProductVision .thirdWidth {
-            width: 100%;
-            padding-bottom: 20px;
-        }
-    }
 
 
 
-
-
-    /**  HAMBURGER MENU STUFF - START  **/
-    /* @media only screen and (max-width: 500px) {
-        .singleGridBox {
-            width: 100%;
-
-        }
-        .someFacts .leftHalf {
-            width: 100%;
-        }
-        .someFacts .rightHalf {
-            width: 100%;
-            justify-content: center;
-        }
-        nav {
-            visibility: hidden;
-        }
-        .mobileNav {
-            visibility: visible;
-            line-height: .1;
-            font-size: 50px;
-        }
-        .hamburger {
-            margin-top: -35px;
-        }
-        .hamburger:hover {
-            color: white;
-            cursor: pointer;
-        }
-    } */
-    /*  HAMBURGER MENU STUFF - END  */
-
-/* RESPSONSIVE FOR MAX-WIDTH 500px - END */
-
-
-/*** RESPONSIVE FOR MAX-WIDTH 800px - START ***/
-
-    @media (max-width: 800px){
-        header{
-            flex-direction: column-reverse ;
-            justify-content: center;
-        }
-        .logoBox{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-        nav {
-            display: flex;
-            justify-content: space-evenly;
-        }
-        /* .leftHalf .halfWidth {
-            width: 100%;
-        } */
-        .halfWidth.rightHalf {
-            display: none;
-        }
-        .halfWidth {
-            width: 100%;
-        }
-    }
-
-/* RESPONSIVE FOR MAX-WIDTH 800px - END */
